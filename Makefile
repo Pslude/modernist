@@ -9,7 +9,7 @@ $(BUILD_DIR):
 	mkdir -p $@
 
 $(BUILD_DIR)/$(EXE):
-	$(GODOT) --path $(PROJECT_DIR) --export-release Linux $(CURDIR)/$@
+	$(GODOT) --path $(PROJECT_DIR) --export-release linux $(CURDIR)/$@
 
 clean:
 	rm -rf $(BUILD_DIR)

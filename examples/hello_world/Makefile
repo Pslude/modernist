@@ -1,10 +1,14 @@
+# Makefile
+
 GODOT = godot --headless
 PROJECT_DIR = project
 BUILD_DIR = build
 
-PCK := $(notdir $(CURDIR)).pck
-#PRESETS := linux windows
-#PCKS := $(PRESETS:%=$(BUILD_DIR)/$(PCK)_%.pck)
+# @todo
+#MOD = $(notdir $(CURDIR))
+#PRESETS = linux windows
+#PCKS = $(PRESETS:%=$(BUILD_DIR)/$(MOD)_%.pck)
+PCK = $(notdir $(CURDIR)).pck
 
 all: $(BUILD_DIR) $(BUILD_DIR)/$(PCK)
 
