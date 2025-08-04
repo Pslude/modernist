@@ -1,4 +1,3 @@
-
 ; Engine configuration file.
 ; It's best edited using the editor UI and not directly,
 ; since the parameters that go here are not all obvious.
@@ -11,7 +10,6 @@ config_version=5
 
 [application]
 
-config/name="hello_world"
-run/main_scene="res://hello.tscn"
-config/features=PackedStringArray("4.2", "Forward Plus")
-
+config/name="Hello World (Modernist example mod)"
+run/main_scene="res://init.tscn"
+config/features=PackedStringArray("4.4", "Forward Plus")

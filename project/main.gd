@@ -13,9 +13,8 @@ func _ready():
 				var loaded = ProjectSettings.load_resource_pack(mod_path)
 				if loaded:
 					print("Loaded mod: ", mod_path)
-					var mod_scene_path = "res://hello.tscn"
-					var mod_scene = load(mod_scene_path)
-					if mod_scene:
-						var mod_instance = mod_scene.instantiate()
-						add_child(mod_instance)
+					var init_scene = load("res://init.tscn")
+					if init_scene:
+						print("Launching mod init.tscn: ", mod_path)
+						add_child(init_scene.instantiate())
 			file_name = dir.get_next()

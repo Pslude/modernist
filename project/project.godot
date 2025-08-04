@@ -11,6 +11,15 @@ config_version=5
 [application]
 
 config/name="Modernist"
+config/description="Modernist is a game framework that pushes it's modular design to the extreme. Customize every aspect of the game by what you put in the /mods/ folder.
+"
+config/version="1.0"
 run/main_scene="res://main.tscn"
 config/features=PackedStringArray("4.4", "Forward Plus")
-config/icon="res://icon.svg"
+boot_splash/bg_color=Color(0.501961, 0, 0.501961, 1)
+boot_splash/image="uid://cog1gdx12m1fh"
+config/icon="uid://ciuetoonfl6rb"
+
+[display]
+
+window/size/mode=4
