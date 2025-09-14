@@ -37,6 +37,7 @@ func _ready():
 				}))
 
 func _exit_tree():
+	print('main::_exit_tree()')
 	for child in get_children():
 		child.queue_free()
 	call_deferred("unload_packs")
@@ -44,4 +45,6 @@ func _exit_tree():
 
 func unload_packs():
 	for pack in loaded_packs:
-		ProjectSettings.call("unload_resource_pack", pack)
+		print('Unload: ', pack)
+		if OS.has_feature("template"):
+			ProjectSettings.call("unload_resource_pack", pack)
