@@ -1,8 +1,8 @@
 [gd_scene load_steps=2 format=3 uid="uid://d1j2xrqcwn5n"]
 
-[ext_resource type="Script" uid="uid://cwn5n851j5a5r" path="res://main_menu/main.gd" id="1_oa53l"]
+[ext_resource type="Script" uid="uid://cwn5n851j5a5r" path="res://game/main.gd" id="1_oa53l"]
 
-[node name="MainMenu" type="Control"]
+[node name="Game" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -21,18 +21,17 @@ anchor_bottom = 0.5
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="NewGameButton" type="Button" parent="VBoxContainer"]
+[node name="Label" type="Label" parent="VBoxContainer"]
 layout_mode = 2
-text = "New Game"
+text = "Game"
 
 [node name="SettingsButton" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 text = "Settings"
 
-[node name="QuitButton" type="Button" parent="VBoxContainer"]
+[node name="BackToMainMenuButton" type="Button" parent="VBoxContainer"]
 layout_mode = 2
-text = "Quit"
+text = "Back to Main Menu"
 
-[connection signal="pressed" from="VBoxContainer/NewGameButton" to="." method="_on_new_game_button_pressed"]
 [connection signal="pressed" from="VBoxContainer/SettingsButton" to="." method="_on_settings_button_pressed"]
-[connection signal="pressed" from="VBoxContainer/QuitButton" to="." method="_on_quit_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/BackToMainMenuButton" to="." method="_on_back_to_main_menu_button_pressed"]
