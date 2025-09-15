@@ -3,9 +3,17 @@ extends Node2D
 var loaded_packs = []
 
 func _ready():
-	# load from "mods" in folder game exe dir if built (template) or in "../build/" if dev (editor)
-	var game_dir = OS.get_executable_path().get_base_dir() if OS.has_feature("template") else "../build/"
-	var mods_dir = game_dir.path_join("mods/")
+	var game_dir: String
+	# if running export (release)
+	if OS.has_feature("template"):
+		# load mods from game (exe) dir
+		game_dir = OS.get_executable_path().get_base_dir()
+	# otherwise, assume running in editor (dev)
+	else:
+		# load mods from parent "build" dir
+		game_dir = "../build/"
+		# @todo load mods from source?
+	var mods_dir = game_dir.path_join("mods")
 	print(tr(
 		"Loading modules from: {path}"
 	).format({
