@@ -12,4 +12,4 @@ config_version=5
 
 config/name="Settings Menu (Modernist example mod)"
 run/main_scene="uid://sssm"
-config/features=PackedStringArray("4.4", "Forward Plus")
+config/features=PackedStringArray("4.5", "Forward Plus")
