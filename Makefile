@@ -18,7 +18,6 @@ mods: $(BUILD_DIR)/mods
 	@for mod in $(MODS); do \
 		echo "Building mod: $$mod"; \
 		$(MAKE) -C $(MODS_DIR)/$$mod; \
-		echo "Copying $$mod mod pack to $(BUILD_DIR)/mods"; \
 		cp $(MODS_DIR)/$$mod/build/*.pck $(BUILD_DIR)/mods/; \
 	done
 
