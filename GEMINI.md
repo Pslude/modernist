@@ -4,5 +4,5 @@ Modernist is a game project built in Godot with an extremely modular design.  Th
 
 ## Project Layout
 
-The main game project code is a Godot project in the "project" directory. Builds are exported under "build". Example mod projects are under "mods".
+The main game project code is a Godot project in the "project" directory. Builds are exported under "build". Example mod projects are under "mods" and together these mods form the base example game.
 
