@@ -11,5 +11,5 @@ config_version=5
 [application]
 
 config/name="Game (Modernist example mod)"
-run/main_scene="uid://d1j2xrqcwn5n"
+run/main_scene="uid://dd5ij4qm51u6s"
 config/features=PackedStringArray("4.5", "Forward Plus")
