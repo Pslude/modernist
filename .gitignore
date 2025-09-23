@@ -1,2 +1,3 @@
 .godot/
-build/
+/build/
+/mods/*/build/
