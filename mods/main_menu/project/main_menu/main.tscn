@@ -1,6 +1,9 @@
-[gd_scene load_steps=2 format=3 uid="uid://d1j2xrqcwn5n"]
+[gd_scene load_steps=3 format=3 uid="uid://dww2xrqcwn5n"]
 
 [ext_resource type="Script" uid="uid://cwn5n851j5a5r" path="res://main_menu/main.gd" id="1_oa53l"]
+
+[sub_resource type="SystemFont" id="SystemFont_qllij"]
+font_names = PackedStringArray("Libertinus Sans")
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3
@@ -20,6 +23,13 @@ anchor_right = 0.5
 anchor_bottom = 0.5
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="TitleLabel" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = SubResource("SystemFont_qllij")
+theme_override_font_sizes/font_size = 128
+text = "Modernist"
+horizontal_alignment = 1
 
 [node name="NewGameButton" type="Button" parent="VBoxContainer"]
 layout_mode = 2

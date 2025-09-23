@@ -10,9 +10,21 @@ func _ready():
 		game_dir = OS.get_executable_path().get_base_dir()
 	# otherwise, assume running in editor (dev)
 	else:
-		# load mods from parent "build" dir
-		game_dir = "../build/"
-		# @todo load mods from source?
+		
+		# load mods from source (symlinked in main project dir)
+		for dir_name in DirAccess.get_directories_at(game_dir):
+			var init_script_path = "res://{mod_name}/init.gd".format({mod_name=dir_name})
+			var init_script = load(init_script_path)
+			if init_script:
+				print("Init: ", init_script_path)
+				var init_node = init_script.new()
+				add_child(init_node)
+		return 
+		
+		# load packaged mods from parent "build" dir
+		#game_dir = "../build/"
+		
+		
 	var mods_dir = game_dir.path_join("mods")
 	print(tr(
 		"Loading modules from: {path}"

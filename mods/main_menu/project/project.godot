@@ -11,5 +11,5 @@ config_version=5
 [application]
 
 config/name="Main Menu (Modernist example mod)"
-run/main_scene="uid://d1j2xrqcwn5n"
+run/main_scene="uid://dww2xrqcwn5n"
 config/features=PackedStringArray("4.5", "Forward Plus")
