@@ -1,0 +1,46 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://settings_menu/settings/video.gd" id="1_abcde"]
+
+[node name="VideoSettings" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_abcde")
+
+[node name="GridContainer" type="GridContainer" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+columns = 2
+
+[node name="WindowModeLabel" type="Label" parent="GridContainer"]
+layout_mode = 2
+text = "Windowed Mode"
+
+[node name="WindowModeOptionButton" type="OptionButton" parent="GridContainer"]
+layout_mode = 2
+
+[node name="ResolutionLabel" type="Label" parent="GridContainer"]
+layout_mode = 2
+text = "Resolution"
+
+[node name="ResolutionOptionButton" type="OptionButton" parent="GridContainer"]
+layout_mode = 2
+
+[node name="VSyncModeLabel" type="Label" parent="GridContainer"]
+layout_mode = 2
+text = "V-Sync Mode"
+
+[node name="VSyncModeOptionButton" type="OptionButton" parent="GridContainer"]
+layout_mode = 2
+
+[node name="FrameRateLimitLabel" type="Label" parent="GridContainer"]
+layout_mode = 2
+text = "Frame Rate Limit"
+
+[node name="FrameRateLimitOptionButton" type="OptionButton" parent="GridContainer"]
+layout_mode = 2

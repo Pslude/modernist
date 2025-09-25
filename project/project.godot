@@ -19,3 +19,7 @@ config/features=PackedStringArray("4.5", "Forward Plus")
 boot_splash/bg_color=Color(0.501961, 0, 0.501961, 1)
 boot_splash/image="uid://cog1gdx12m1fh"
 config/icon="uid://ciuetoonfl6rb"
+
+[display]
+
+window/size/mode=3
