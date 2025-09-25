@@ -1,4 +1,5 @@
 extends Node
 
 func _ready():
-	print("Hello, World!")
+	#print("Hello, World!")
+	pass
