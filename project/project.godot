@@ -22,4 +22,4 @@ config/icon="uid://ciuetoonfl6rb"
 
 [display]
 
-window/size/mode=3
+window/size/resizable=false
