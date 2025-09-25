@@ -6,14 +6,14 @@ A game project built in Godot with an extremely modular design. The base game pr
 
 To package a mod, you need to export it from the Godot editor. This can be done using the command line.
 
-First, you need to have an export preset configured in your mod's `export_presets.cfg` file. Then, you can use the following command to export the mod as a `.pck` file.
+First, you need to have an export preset configured in your mod's `export_presets.cfg` file. Then, you can use export the mod as a `.pck` file using `godot` from the command line.
 
-For example, to build the `hello_world` mod, change to the mod's project directory and run the following command:
+For example, to build the `main_menu` mod, change to the mod's project directory and run the following command:
 
 ```bash
-cd examples/hello_world/project/
-godot --headless --export-pack Linux ../build/hello_world.pck ./project.godot
+cd mods/main_menu/project/
+godot --headless --export-pack Linux ../build/main_menu.pck ./project.godot
 ```
 
-This will create the `hello_world.pck` file in the mod's `build` directory.
+This will create the `main_menu.pck` file in the mod's `build` directory.
 
