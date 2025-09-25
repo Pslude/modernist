@@ -36,3 +36,7 @@ text = "Join Private Game"
 [node name="HostGameButton" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 text = "Host Game"
+
+[node name="BackButton" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "Back"

@@ -14,6 +14,7 @@ func _ready():
 	$VBoxContainer/FindPublicGameButton.pressed.connect(_on_find_public_game_button_pressed)
 	$VBoxContainer/JoinPrivateGameButton.pressed.connect(_on_join_private_game_button_pressed)
 	$VBoxContainer/HostGameButton.pressed.connect(_on_host_game_button_pressed)
+	$VBoxContainer/BackButton.pressed.connect(_on_back_button_pressed)
 
 	find_public_game_menu = FindPublicGameMenu.instantiate()
 	find_public_game_menu.back.connect(_on_back_to_main_menu)
@@ -41,6 +42,9 @@ func _on_join_private_game_button_pressed():
 func _on_host_game_button_pressed():
 	main_menu.hide()
 	host_game_menu.show()
+
+func _on_back_button_pressed():
+	get_tree().change_scene_to_file("res://main_menu/main.tscn")
 
 func _on_back_to_main_menu():
 	find_public_game_menu.hide()
